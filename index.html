@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="design.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter</title>
+</head>
+
+<body>
+    <main>
+        <aside class="left">
+            <pre class="heading">
+{ <span class="key">'formatted' : </span> <span class="value">false</span> }
+                </pre>
+            <textarea class="input"></textarea>
+        </aside>
+        <div class="buttons">
+            <button onclick="format()">Format</button>
+            <button onclick="minify()">Minify</button>
+        </div>
+        <aside class="right">
+            <pre class="heading">
+{ <span class="key keyo">'formatted' : </span> <span class="value">true</span> }
+             </pre>
+            <textarea readonly class="output"></textarea>
+        </aside>
+    </main>
+    <script defer src="./format.js"></script>
+</body>
+
+</html>
