@@ -2,7 +2,7 @@ const input = document.querySelector(".input")
 const output = document.querySelector(".output")
 const key = document.querySelector(".keyo")
 
-
+// format code
 function format(){
     try{
 
@@ -13,9 +13,12 @@ function format(){
     }
     catch{
         err => console.log(err)
+        output.value = "Invalid json"
     }
 }
-    
+
+
+// function to minify code
     
 function minify(){
     try{
@@ -27,5 +30,12 @@ function minify(){
     }
     catch{
         err => console.log(err) 
+        output.value = "Invalid json"
     }
+}
+
+
+// format code on enter
+input.onkeydown = (e) => {
+e.key === "Enter" ? format() : ""
 }
