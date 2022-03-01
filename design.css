@@ -65,8 +65,9 @@ aside textarea{
     background: none;
     height: calc(100% - 90px);
     color: #777;
-    font-weight:800;
+    font-weight:700;
     border-radius: 15px;
+    font-size: .75rem;
     border: 1px solid #222;
     background:#10141ce7;
     resize: none;
@@ -102,4 +103,15 @@ button:hover{
     transform: scale(1.05);
     box-shadow: 0 0 14px rgba(42, 165, 210, 0.235);
 
+}
+
+::-webkit-scrollbar{
+    background-color: #aaa;
+    border-radius: .75rem;
+    width: .25rem;
+    margin: 0 2.5rem;
+}
+::-webkit-scrollbar-thumb{
+    color: #0B0E14;
+    background: #0B0E14;
 }
